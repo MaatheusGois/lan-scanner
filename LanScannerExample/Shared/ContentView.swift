@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @Environment(\.scenePhase) private var scenePhase
     @ObservedObject var viewModel = CountViewModel()
     @State var showAlert: Bool = false
 
