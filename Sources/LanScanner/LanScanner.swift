@@ -9,10 +9,10 @@ import LanScanInternal
 import CoreGraphics
 
 public struct LanDevice {
-    public var name: String?
-    public var ipAddress: String?
-    public var mac: String?
-    public var brand: String?
+    public var name: String
+    public var ipAddress: String
+    public var mac: String
+    public var brand: String
 }
 
 public protocol LanScannerDelegate: AnyObject {
@@ -61,10 +61,10 @@ extension LanScanner: LANScanDelegate {
         guard let device = device as? [AnyHashable: String] else { return }
         delegate?.lanScanDidFindNewDevice(
             .init(
-                name: device[DEVICE_IP_ADDRESS],
-                ipAddress: device[DEVICE_NAME],
-                mac: device[DEVICE_MAC],
-                brand: device[DEVICE_BRAND]
+                name: device[DEVICE_IP_ADDRESS] ?? "",
+                ipAddress: device[DEVICE_NAME] ?? "",
+                mac: device[DEVICE_MAC] ?? "",
+                brand: device[DEVICE_BRAND] ?? ""
             )
         )
     }
