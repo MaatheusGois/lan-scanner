@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "LanScanner",
-        "repositoryURL": "https://github.com/MaatheusGois/lan-scan",
+        "repositoryURL": "https://github.com/MaatheusGois/lan-scanner",
         "state": {
           "branch": "main",
-          "revision": "f47e7821eef0127e7627e939fb5a2c6b0075cab4",
+          "revision": "e8ef29415477298ae5d3ece934f740b9696e599f",
           "version": null
         }
       }

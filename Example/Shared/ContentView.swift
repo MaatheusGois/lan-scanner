@@ -40,7 +40,9 @@ struct ContentView: View {
                             .font(.footnote)
                     }
                     .onTapGesture {
-                        UIPasteboard.general.string = device.name
+                        #if os(iOS)
+                            UIPasteboard.general.string = device.name
+                        #endif
                     }
                     .padding()
 

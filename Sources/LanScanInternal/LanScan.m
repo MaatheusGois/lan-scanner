@@ -127,13 +127,16 @@
     self.localAddress = [self localIPAddress];
     NSArray *a = [self.localAddress componentsSeparatedByString:@"."];
     NSArray *b = [self.netMask componentsSeparatedByString:@"."];
-    if ([self isIpAddressValid:self.localAddress] && (a.count == 4) && (b.count == 4)) {
+    if ([self isIpAddressValid:self.localAddress] && (a.count == 4) && (b.count == 4))
+    {
         for (int i = 0; i < 4; i++) {
             int and = (int)[[a objectAtIndex:i] integerValue] & [[b objectAtIndex:i] integerValue];
-            if (!self.baseAddress.length) {
+            if (!self.baseAddress.length)
+            {
                 self.baseAddress = [NSString stringWithFormat:@"%d", and];
             }
-            else {
+            else
+            {
                 self.baseAddress = [NSString stringWithFormat:@"%@.%d", self.baseAddress, and];
                 self.currentHostAddress = and;
                 self.baseAddressEnd = and;
@@ -192,6 +195,9 @@
                                       nil];
                 
                 [self.delegate lanScanDidFindNewDevice: dict];
+            } else {
+                // If debug mode is active
+                deb(@"%@", error);
             }
             
         }];
@@ -530,24 +536,24 @@
     return @"";
 }
 
--(NSString*) getCurrentWifiSSID {
-#if TARGET_IPHONE_SIMULATOR
-    return @"Sim_err_SSID_NotSupported";
-#else
-    NSString *data = nil;
-    CFDictionaryRef dict = CNCopyCurrentNetworkInfo((CFStringRef) DEFAULT_WIFI_INTERFACE);
-    if (dict) {
-        deb(@"AP Wifi: %@", dict);
-        data = [NSString stringWithString:(NSString *)CFDictionaryGetValue(dict, @"SSID")];
-        CFRelease(dict);
-    }
-    
-    if (data == nil) {
-        data = @"none";
-    }
-    
-    return data;
-#endif
-}
+//-(NSString*) getCurrentWifiSSID {
+//#if TARGET_IPHONE_SIMULATOR
+//    return @"Sim_err_SSID_NotSupported";
+//#else
+//    NSString *data = nil;
+//    CFDictionaryRef dict = CNCopyCurrentNetworkInfo((CFStringRef) DEFAULT_WIFI_INTERFACE);
+//    if (dict) {
+//        deb(@"AP Wifi: %@", dict);
+//        data = [NSString stringWithString:(NSString *)CFDictionaryGetValue(dict, @"SSID")];
+//        CFRelease(dict);
+//    }
+//
+//    if (data == nil) {
+//        data = @"none";
+//    }
+//
+//    return data;
+//#endif
+//}
 
 @end

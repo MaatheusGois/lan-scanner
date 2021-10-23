@@ -47,7 +47,7 @@ public class LanScanner: NSObject {
     }
 
     public func getCurrentWifiSSID() -> String? {
-        scanner?.getCurrentWifiSSID()
+        nil // scanner?.getCurrentWifiSSID()
     }
 }
 
