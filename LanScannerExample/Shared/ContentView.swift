@@ -8,9 +8,51 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @Environment(\.scenePhase) private var scenePhase
+    @ObservedObject var viewModel = CountViewModel()
+    @State var showAlert: Bool = false
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(alignment: .leading) {
+            VStack {
+                HStack {
+                    Text(viewModel.title)
+                        .font(.title)
+                    Spacer()
+                    Button {
+                        viewModel.reload()
+                    } label: {
+                        Image(systemName: "repeat")
+                            .foregroundColor(.black)
+                    }
+                }
+                ProgressView(value: viewModel.progress)
+            }.padding()
+
+            List {
+                ForEach(viewModel.connectedDevices) { device in
+                    VStack(alignment: .leading) {
+                        Text(device.name)
+                            .font(.body)
+                        Text(device.mac)
+                            .font(.caption)
+                        Text(device.brand)
+                            .font(.footnote)
+                    }
+                    .onTapGesture {
+                        UIPasteboard.general.string = device.name
+                    }
+                    .padding()
+
+                }
+            }.alert(isPresented: $viewModel.showAlert) {
+                Alert(
+                    title: Text("Scan Finished"),
+                    message: Text("Number of devices connected to your Local Area Network: \(viewModel.connectedDevices.count)")
+                )
+            }
+        }
     }
 }
 

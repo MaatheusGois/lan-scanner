@@ -13,6 +13,9 @@
 		82EC1C662723B25C00C8BACC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC1C542723B25900C8BACC /* ContentView.swift */; };
 		82EC1C672723B25C00C8BACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82EC1C552723B25C00C8BACC /* Assets.xcassets */; };
 		82EC1C682723B25C00C8BACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82EC1C552723B25C00C8BACC /* Assets.xcassets */; };
+		82EC1C732723B2F300C8BACC /* LanScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 82EC1C722723B2F300C8BACC /* LanScanner */; };
+		82EC1C762723B41B00C8BACC /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC1C752723B41B00C8BACC /* ContentViewModel.swift */; };
+		82EC1C772723B41B00C8BACC /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC1C752723B41B00C8BACC /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,8 @@
 		82EC1C5A2723B25C00C8BACC /* LanScannerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanScannerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EC1C602723B25C00C8BACC /* LanScannerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanScannerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EC1C622723B25C00C8BACC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		82EC1C742723B30400C8BACC /* lan-scan */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "lan-scan"; path = ..; sourceTree = "<group>"; };
+		82EC1C752723B41B00C8BACC /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82EC1C732723B2F300C8BACC /* LanScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +51,7 @@
 		82EC1C4D2723B25800C8BACC = {
 			isa = PBXGroup;
 			children = (
+				82EC1C742723B30400C8BACC /* lan-scan */,
 				82EC1C522723B25900C8BACC /* Shared */,
 				82EC1C612723B25C00C8BACC /* macOS */,
 				82EC1C5B2723B25C00C8BACC /* Products */,
@@ -56,6 +63,7 @@
 			children = (
 				82EC1C532723B25900C8BACC /* LanScannerExampleApp.swift */,
 				82EC1C542723B25900C8BACC /* ContentView.swift */,
+				82EC1C752723B41B00C8BACC /* ContentViewModel.swift */,
 				82EC1C552723B25C00C8BACC /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -94,6 +102,9 @@
 			dependencies = (
 			);
 			name = "LanScannerExample (iOS)";
+			packageProductDependencies = (
+				82EC1C722723B2F300C8BACC /* LanScanner */,
+			);
 			productName = "LanScannerExample (iOS)";
 			productReference = 82EC1C5A2723B25C00C8BACC /* LanScannerExample.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +153,9 @@
 				Base,
 			);
 			mainGroup = 82EC1C4D2723B25800C8BACC;
+			packageReferences = (
+				82EC1C712723B2F300C8BACC /* XCRemoteSwiftPackageReference "lan-scan" */,
+			);
 			productRefGroup = 82EC1C5B2723B25C00C8BACC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,6 +192,7 @@
 			files = (
 				82EC1C652723B25C00C8BACC /* ContentView.swift in Sources */,
 				82EC1C632723B25C00C8BACC /* LanScannerExampleApp.swift in Sources */,
+				82EC1C762723B41B00C8BACC /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +202,7 @@
 			files = (
 				82EC1C662723B25C00C8BACC /* ContentView.swift in Sources */,
 				82EC1C642723B25C00C8BACC /* LanScannerExampleApp.swift in Sources */,
+				82EC1C772723B41B00C8BACC /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +468,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82EC1C712723B2F300C8BACC /* XCRemoteSwiftPackageReference "lan-scan" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MaatheusGois/lan-scan";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82EC1C722723B2F300C8BACC /* LanScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82EC1C712723B2F300C8BACC /* XCRemoteSwiftPackageReference "lan-scan" */;
+			productName = LanScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82EC1C4E2723B25800C8BACC /* Project object */;
 }
