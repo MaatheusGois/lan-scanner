@@ -7,13 +7,17 @@ let package = Package(
     name: "LanScanner",
     products: [
         .library(
-            name: "LanScan",
-            targets: ["LanScan"]),
+            name: "LanScanner",
+            targets: ["LanScanner"]),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "LanScan",
+            name: "LanScanner",
+            dependencies: ["LanScanInternal"]
+        ),
+        .target(
+            name: "LanScanInternal",
             dependencies: [],
             resources: [
                 .process("Resources")
@@ -21,6 +25,6 @@ let package = Package(
         ),
         .testTarget(
             name: "LanScannerTests",
-            dependencies: ["LanScan"]),
+            dependencies: []),
     ]
 )

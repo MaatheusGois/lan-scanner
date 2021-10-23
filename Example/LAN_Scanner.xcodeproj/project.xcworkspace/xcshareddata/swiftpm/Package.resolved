@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "LanScanner",
+        "repositoryURL": "https://github.com/MaatheusGois/lan-scan",
+        "state": {
+          "branch": "main",
+          "revision": "29663b6bcb346032151fbd39a4d956b6482e3589",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
