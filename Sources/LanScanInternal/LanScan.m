@@ -116,7 +116,7 @@
 
     //Initializing the dictionary that holds the Brands name for each MAC Address
 
-    self.brandDictionary = [[NSDictionary dictionaryWithContentsOfFile: [[NSBundle mainBundle] pathForResource: @"data" ofType: @"plist"]] mutableCopy];
+    self.brandDictionary = [[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource: @"data" ofType: @"plist"]] mutableCopy];
     
     //Initializing the dictionary that holds the Brands downloaded from the internet
     NSMutableDictionary *vendors = [self downloadedVendorsDictionary];
@@ -131,14 +131,14 @@
     if ([self isIpAddressValid:self.localAddress] && (a.count == 4) && (b.count == 4))
     {
         for (int i = 0; i < 4; i++) {
-            long and = (long)[[a objectAtIndex:i] integerValue] & [[b objectAtIndex:i] integerValue];
+            int and = (int)[[a objectAtIndex:i] integerValue] & [[b objectAtIndex:i] integerValue];
             if (!self.baseAddress.length)
             {
-                self.baseAddress = [NSString stringWithFormat:@"%ld", and];
+                self.baseAddress = [NSString stringWithFormat:@"%d", and];
             }
             else
             {
-                self.baseAddress = [NSString stringWithFormat:@"%@%ldd", self.baseAddress, and];
+                self.baseAddress = [NSString stringWithFormat:@"%@.%d", self.baseAddress, and];
                 self.currentHostAddress = and;
                 self.baseAddressEnd = and;
             }
