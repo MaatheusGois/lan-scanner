@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8260E1062723C2DC007282EC /* LanScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 8260E1052723C2DC007282EC /* LanScanner */; };
-		8260E10C27247050007282EC /* LanScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 8260E10B27247050007282EC /* LanScanner */; };
+		827015532730D6B8001843D4 /* LanScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 827015522730D6B8001843D4 /* LanScanner */; };
 		82EC1C632723B25C00C8BACC /* LanScannerExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC1C532723B25900C8BACC /* LanScannerExampleApp.swift */; };
 		82EC1C642723B25C00C8BACC /* LanScannerExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC1C532723B25900C8BACC /* LanScannerExampleApp.swift */; };
 		82EC1C652723B25C00C8BACC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC1C542723B25900C8BACC /* ContentView.swift */; };
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8260E10C27247050007282EC /* LanScanner in Frameworks */,
+				827015532730D6B8001843D4 /* LanScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +133,7 @@
 			);
 			name = "LanScannerExample (macOS)";
 			packageProductDependencies = (
-				8260E10B27247050007282EC /* LanScanner */,
+				827015522730D6B8001843D4 /* LanScanner */,
 			);
 			productName = "LanScannerExample (macOS)";
 			productReference = 82EC1C602723B25C00C8BACC /* LanScannerExample.app */;
@@ -499,7 +499,7 @@
 			package = 8260E1042723C2DC007282EC /* XCRemoteSwiftPackageReference "lan-scanner" */;
 			productName = LanScanner;
 		};
-		8260E10B27247050007282EC /* LanScanner */ = {
+		827015522730D6B8001843D4 /* LanScanner */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8260E1042723C2DC007282EC /* XCRemoteSwiftPackageReference "lan-scanner" */;
 			productName = LanScanner;
