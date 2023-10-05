@@ -61,8 +61,8 @@ extension LanScanner: LANScanDelegate {
         guard let device = device as? [AnyHashable: String] else { return }
         delegate?.lanScanDidFindNewDevice(
             .init(
-                name: device[DEVICE_IP_ADDRESS] ?? "",
-                ipAddress: device[DEVICE_NAME] ?? "",
+                name: device[DEVICE_NAME] ?? "",
+                ipAddress: device[DEVICE_IP_ADDRESS] ?? "",
                 mac: device[DEVICE_MAC] ?? "",
                 brand: device[DEVICE_BRAND] ?? ""
             )
