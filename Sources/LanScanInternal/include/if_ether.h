@@ -110,13 +110,7 @@
  * to resolving internet addresses.  Field names used correspond to
  * RFC 826.
  */
-struct	ether_arp {
-    struct	arphdr ea_hdr;	/* fixed-size header */
-    //u_char	arp_sha[ETHER_ADDR_LEN];	/* sender hardware address */
-    u_char	arp_spa[4];	/* sender protocol address */
-    //u_char	arp_tha[ETHER_ADDR_LEN];	/* target hardware address */
-    u_char	arp_tpa[4];	/* target protocol address */
-};
+
 #define	arp_hrd	ea_hdr.ar_hrd
 #define	arp_pro	ea_hdr.ar_pro
 #define	arp_hln	ea_hdr.ar_hln

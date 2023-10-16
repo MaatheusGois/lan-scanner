@@ -173,6 +173,7 @@
                 if([self isEmpty:deviceBrand]) {
                     
                     NSURL *url = [NSURL URLWithString:[[NSString alloc] initWithFormat:@"https://api.macvendors.com/%@", deviceMac]];
+                    /// Synchronous URL loading of  `DispatchQueue.main.async`
                     NSData *data = [NSData dataWithContentsOfURL: url];
                     if(![self isEmpty: data]) {
                         deviceBrand = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
