@@ -7,8 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8260E1062723C2DC007282EC /* LanScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 8260E1052723C2DC007282EC /* LanScanner */; };
-		827015532730D6B8001843D4 /* LanScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 827015522730D6B8001843D4 /* LanScanner */; };
+		2E1771252B6F4B11008AB4EB /* SimplePingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1771202B6F4B11008AB4EB /* SimplePingDelegate.swift */; };
+		2E1771262B6F4B11008AB4EB /* SimplePingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1771202B6F4B11008AB4EB /* SimplePingDelegate.swift */; };
+		2E1771272B6F4B11008AB4EB /* IPv4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1771212B6F4B11008AB4EB /* IPv4.swift */; };
+		2E1771282B6F4B11008AB4EB /* IPv4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1771212B6F4B11008AB4EB /* IPv4.swift */; };
+		2E1771292B6F4B11008AB4EB /* ICMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1771222B6F4B11008AB4EB /* ICMP.swift */; };
+		2E17712A2B6F4B11008AB4EB /* ICMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1771222B6F4B11008AB4EB /* ICMP.swift */; };
+		2E17712B2B6F4B11008AB4EB /* SimplePing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1771232B6F4B11008AB4EB /* SimplePing.swift */; };
+		2E17712C2B6F4B11008AB4EB /* SimplePing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1771232B6F4B11008AB4EB /* SimplePing.swift */; };
+		2E17712D2B6F4B11008AB4EB /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1771242B6F4B11008AB4EB /* Main.swift */; };
+		2E17712E2B6F4B11008AB4EB /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1771242B6F4B11008AB4EB /* Main.swift */; };
+		2E1771322B6F4C07008AB4EB /* LANDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E17712F2B6F4C07008AB4EB /* LANDevice.swift */; };
+		2E1771332B6F4C07008AB4EB /* LANDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E17712F2B6F4C07008AB4EB /* LANDevice.swift */; };
+		2E1771342B6F4C07008AB4EB /* LANScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1771302B6F4C07008AB4EB /* LANScanner.swift */; };
+		2E1771352B6F4C07008AB4EB /* LANScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1771302B6F4C07008AB4EB /* LANScanner.swift */; };
+		2E1771362B6F4C07008AB4EB /* LANHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1771312B6F4C07008AB4EB /* LANHost.swift */; };
+		2E1771372B6F4C07008AB4EB /* LANHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1771312B6F4C07008AB4EB /* LANHost.swift */; };
 		82EC1C632723B25C00C8BACC /* LanScannerExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC1C532723B25900C8BACC /* LanScannerExampleApp.swift */; };
 		82EC1C642723B25C00C8BACC /* LanScannerExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC1C532723B25900C8BACC /* LanScannerExampleApp.swift */; };
 		82EC1C652723B25C00C8BACC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC1C542723B25900C8BACC /* ContentView.swift */; };
@@ -20,7 +34,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8260E1072723C340007282EC /* lan-scanner */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "lan-scanner"; path = ..; sourceTree = "<group>"; };
+		2E1771202B6F4B11008AB4EB /* SimplePingDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePingDelegate.swift; sourceTree = "<group>"; };
+		2E1771212B6F4B11008AB4EB /* IPv4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPv4.swift; sourceTree = "<group>"; };
+		2E1771222B6F4B11008AB4EB /* ICMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICMP.swift; sourceTree = "<group>"; };
+		2E1771232B6F4B11008AB4EB /* SimplePing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePing.swift; sourceTree = "<group>"; };
+		2E1771242B6F4B11008AB4EB /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		2E17712F2B6F4C07008AB4EB /* LANDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LANDevice.swift; sourceTree = "<group>"; };
+		2E1771302B6F4C07008AB4EB /* LANScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LANScanner.swift; sourceTree = "<group>"; };
+		2E1771312B6F4C07008AB4EB /* LANHost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LANHost.swift; sourceTree = "<group>"; };
 		82EC1C532723B25900C8BACC /* LanScannerExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanScannerExampleApp.swift; sourceTree = "<group>"; };
 		82EC1C542723B25900C8BACC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		82EC1C552723B25C00C8BACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8260E1062723C2DC007282EC /* LanScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,13 +63,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				827015532730D6B8001843D4 /* LanScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E17711F2B6F4B11008AB4EB /* SimpleSwiftPing */ = {
+			isa = PBXGroup;
+			children = (
+				2E1771202B6F4B11008AB4EB /* SimplePingDelegate.swift */,
+				2E1771212B6F4B11008AB4EB /* IPv4.swift */,
+				2E1771222B6F4B11008AB4EB /* ICMP.swift */,
+				2E1771232B6F4B11008AB4EB /* SimplePing.swift */,
+				2E1771242B6F4B11008AB4EB /* Main.swift */,
+			);
+			path = SimpleSwiftPing;
+			sourceTree = "<group>";
+		};
+		2E1771382B6F4C0C008AB4EB /* LanScanner */ = {
+			isa = PBXGroup;
+			children = (
+				2E17712F2B6F4C07008AB4EB /* LANDevice.swift */,
+				2E1771312B6F4C07008AB4EB /* LANHost.swift */,
+				2E1771302B6F4C07008AB4EB /* LANScanner.swift */,
+			);
+			path = LanScanner;
+			sourceTree = "<group>";
+		};
 		8260E10827246BC9007282EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +101,6 @@
 		82EC1C4D2723B25800C8BACC = {
 			isa = PBXGroup;
 			children = (
-				8260E1072723C340007282EC /* lan-scanner */,
 				82EC1C522723B25900C8BACC /* Shared */,
 				82EC1C612723B25C00C8BACC /* macOS */,
 				82EC1C5B2723B25C00C8BACC /* Products */,
@@ -71,6 +111,8 @@
 		82EC1C522723B25900C8BACC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2E1771382B6F4C0C008AB4EB /* LanScanner */,
+				2E17711F2B6F4B11008AB4EB /* SimpleSwiftPing */,
 				82EC1C532723B25900C8BACC /* LanScannerExampleApp.swift */,
 				82EC1C542723B25900C8BACC /* ContentView.swift */,
 				82EC1C752723B41B00C8BACC /* ContentViewModel.swift */,
@@ -113,7 +155,6 @@
 			);
 			name = "LanScannerExample (iOS)";
 			packageProductDependencies = (
-				8260E1052723C2DC007282EC /* LanScanner */,
 			);
 			productName = "LanScannerExample (iOS)";
 			productReference = 82EC1C5A2723B25C00C8BACC /* LanScannerExample.app */;
@@ -133,7 +174,6 @@
 			);
 			name = "LanScannerExample (macOS)";
 			packageProductDependencies = (
-				827015522730D6B8001843D4 /* LanScanner */,
 			);
 			productName = "LanScannerExample (macOS)";
 			productReference = 82EC1C602723B25C00C8BACC /* LanScannerExample.app */;
@@ -167,7 +207,6 @@
 			);
 			mainGroup = 82EC1C4D2723B25800C8BACC;
 			packageReferences = (
-				8260E1042723C2DC007282EC /* XCRemoteSwiftPackageReference "lan-scanner" */,
 			);
 			productRefGroup = 82EC1C5B2723B25C00C8BACC /* Products */;
 			projectDirPath = "";
@@ -203,9 +242,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1771342B6F4C07008AB4EB /* LANScanner.swift in Sources */,
+				2E17712B2B6F4B11008AB4EB /* SimplePing.swift in Sources */,
+				2E1771292B6F4B11008AB4EB /* ICMP.swift in Sources */,
+				2E17712D2B6F4B11008AB4EB /* Main.swift in Sources */,
 				82EC1C652723B25C00C8BACC /* ContentView.swift in Sources */,
 				82EC1C632723B25C00C8BACC /* LanScannerExampleApp.swift in Sources */,
+				2E1771252B6F4B11008AB4EB /* SimplePingDelegate.swift in Sources */,
+				2E1771362B6F4C07008AB4EB /* LANHost.swift in Sources */,
+				2E1771272B6F4B11008AB4EB /* IPv4.swift in Sources */,
 				82EC1C762723B41B00C8BACC /* ContentViewModel.swift in Sources */,
+				2E1771322B6F4C07008AB4EB /* LANDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,9 +260,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1771352B6F4C07008AB4EB /* LANScanner.swift in Sources */,
+				2E17712C2B6F4B11008AB4EB /* SimplePing.swift in Sources */,
+				2E17712A2B6F4B11008AB4EB /* ICMP.swift in Sources */,
+				2E17712E2B6F4B11008AB4EB /* Main.swift in Sources */,
 				82EC1C662723B25C00C8BACC /* ContentView.swift in Sources */,
 				82EC1C642723B25C00C8BACC /* LanScannerExampleApp.swift in Sources */,
+				2E1771262B6F4B11008AB4EB /* SimplePingDelegate.swift in Sources */,
+				2E1771372B6F4C07008AB4EB /* LANHost.swift in Sources */,
+				2E1771282B6F4B11008AB4EB /* IPv4.swift in Sources */,
 				82EC1C772723B41B00C8BACC /* ContentViewModel.swift in Sources */,
+				2E1771332B6F4C07008AB4EB /* LANDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +398,7 @@
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CTAFH43K36;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -409,7 +464,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = CTAFH43K36;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -439,7 +494,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = CTAFH43K36;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -489,30 +544,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		8260E1042723C2DC007282EC /* XCRemoteSwiftPackageReference "lan-scanner" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/MaatheusGois/lan-scanner";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		8260E1052723C2DC007282EC /* LanScanner */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8260E1042723C2DC007282EC /* XCRemoteSwiftPackageReference "lan-scanner" */;
-			productName = LanScanner;
-		};
-		827015522730D6B8001843D4 /* LanScanner */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8260E1042723C2DC007282EC /* XCRemoteSwiftPackageReference "lan-scanner" */;
-			productName = LanScanner;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82EC1C4E2723B25800C8BACC /* Project object */;
 }
