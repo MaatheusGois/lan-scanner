@@ -116,8 +116,8 @@
 
     //Initializing the dictionary that holds the Brands name for each MAC Address
 
-    self.brandDictionary = [[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource: @"data" ofType: @"plist"]] mutableCopy];
-    
+    self.brandDictionary = [[NSDictionary dictionaryWithContentsOfFile:[SWIFTPM_MODULE_BUNDLE pathForResource: @"data" ofType: @"plist"]] mutableCopy];
+
     //Initializing the dictionary that holds the Brands downloaded from the internet
     NSMutableDictionary *vendors = [self downloadedVendorsDictionary];
     if(![self isEmpty:vendors]){
